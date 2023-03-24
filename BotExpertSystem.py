@@ -28,7 +28,7 @@ X_train, X_test, y_train, y_test = train_test_split(Data.iloc[:,0:5], Data.EXPER
 
 # Create MLPClassifier model
 model = MLPClassifier(hidden_layer_sizes=(100,), max_iter=1000, alpha=1e-4,
-                      solver='sgd', verbose=1, random_state=1,
+                      solver='sgd', verbose=10, random_state=1,
                       learning_rate_init=0.01)
 
 # Train the model on the training data
