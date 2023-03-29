@@ -40,7 +40,7 @@ y_pred = model.predict(X_test)
 # Compute the accuracy of the model
 accuracy = accuracy_score(y_test, y_pred)
 
-print("Accuracy:", accuracy
+print("Accuracy:", accuracy)
 
 #Saving the model
 path="/content/drive/My Drive/MachineLearning/FFBotClassification/BackProp.pkl"
