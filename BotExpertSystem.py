@@ -23,7 +23,7 @@ for column in Data.columns:
   labelMap = dict(zip(encoded_labels, encoded_values))
   print(labelMap)
 
-#Splitting the Dataset
+#Splitting the Dat
 X_train, X_test, y_train, y_test = train_test_split(Data.iloc[:,0:5], Data.EXPERIENCE_AND_ROLE, random_state=0)
 
 # Create MLPClassifier model
