@@ -23,7 +23,7 @@ for column in Data.columns:
   labelMap = dict(zip(encoded_labels, encoded_values))
   print(labelMap)
 
-#Splitting the Dat
+#Splitting the Dataset
 X_train, X_test, y_train, y_test = train_test_split(Data.iloc[:,0:5], Data.EXPERIENCE_AND_ROLE, random_state=0)
 
 # Create MLPClassifier model
@@ -40,7 +40,7 @@ y_pred = model.predict(X_test)
 # Compute the accuracy of the model
 accuracy = accuracy_score(y_test, y_pred)
 
-print("Accuracy:", accuracy)
+print("Accuracy:", accuracy
 
 #Saving the model
 path="/content/drive/My Drive/MachineLearning/FFBotClassification/BackProp.pkl"
